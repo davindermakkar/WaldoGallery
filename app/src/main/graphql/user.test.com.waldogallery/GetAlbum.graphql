@@ -1,0 +1,18 @@
+query GetAlbumByID{
+ album(id: "dTRydwXhGQgthi1r2cKFmg") {
+   id,
+   name,
+   photos {
+     records {
+      urls {
+       size_code
+       url
+       width
+       height
+       quality
+       mime
+     }
+     }
+   }
+ }
+}
